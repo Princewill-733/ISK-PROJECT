@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind project</title>
+    <style>
+      @media (min-width: 1024px) {
+        .transparent::after {
+          content: "addding content to the transparent";
+        }
+        .transparent-2::after {
+          content: "adding";
+        }
+        .transparent-3::after {
+          content: "adding";
+        }
+        .transparent-4::after {
+          content: "adding content to the transparent-4";
+        }
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- the header -->
+    <header
+      class="grid grid-cols-3 py-4 px-6 bg-gray-800 text-white justify-items-center gap-3"
+    >
+      <!-- first header item -->
+      <div class="flex gap-3 items-center text-[12px] lg:text-xs">
+        <div class="relative rounded-full bg-[#736d66] text-black h-7 w-7 p-1">
+          <img
+            class="h-5 w-5 absolute top-1 left-1.2 invert"
+            src="chat icon.jpg"
+            alt="chat icon"
+          />
+        </div>
+        <div>
+          <p class="font-bold">Fale Concosco</p>
+          <p>[47] 3084-5500</p>
+        </div>
+      </div>
+      <!-- second header item -->
+      <div class="flex gap-3 items-center text-[12px] lg:text-xs">
+        <div class="relative rounded-full bg-[#736d66] text-black h-7 w-7">
+          <img
+            class="h-7 w-7 absolute -top-0.45 left-1.3"
+            src="calender icon.png"
+            alt="calender icon"
+          />
+        </div>
+        <div>
+          <p class="font-bold">Attendimento</p>
+          <p class="text-[9px] md:text-xs">seg a sex das 7h30 as 17h</p>
+        </div>
+      </div>
+      <!-- third header item -->
+      <div class="flex gap-3 items-center">
+        <div class="relative rounded-full bg-[#736d66] text-black h-7 w-7">
+          <img
+            class="absolute top-2 left-2 h-3 w-3"
+            src="contact icon.png"
+            alt="contact icon"
+          />
+        </div>
+        <div>
+          <button
+            class="bg-[#bdb4ac] rounded px-2 py-1.5 text-[8px] text-zinc-700 font-bold md:text-xs md:px-6"
+          >
+            Area do Cliente
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- logo section -->
+    <section>
+      <div class="flex uppercase px-6 font-sans items-center text-gray-800">
+        <div class="h-20 w-32 p-0">
+          <img
+            class="object-fit"
+            src="ChatGPT Image Nov 21, 2025, 01_00_20 AM.png"
+            alt="company logo"
+          />
+        </div>
+        <div
+          class="grid grid-cols-3 md:grid-cols-5 md:gap-3 lg:grid-cols-6 sm:ml-8 gap-6 text-center ml-4 w-full"
+        >
+          <div
+            class="text-[10px] md:text-xs hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            inicio
+          </div>
+          <div
+            class="text-[10px] md:text-xs hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            sorbre a isk
+          </div>
+          <div
+            class="text-[10px] md:text-xs hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            servicos
+          </div>
+          <div
+            class="text-[10px] md:text-xs xl:col-span-2 hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            trabalhe conosco
+          </div>
+          <div
+            class="text-[10px] md:text-xs hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            contato
+          </div>
+          <div
+            class="text-[10px] md:text-xs xl:col-span-2 hover:bg-gray-800 rounded hover:text-white hover:text-center"
+          >
+            abra sua empresa
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card main -->
+    <main>
+      <div class="relative">
+        <img
+          class="w-full h-96 object-cover"
+          src="Gemini_Generated_Image_p1r2glp1r2glp1r2.png"
+          alt="background img"
+        />
+        <div class="absolute top-7 left-0 mx-8 bg-rd-500">
+          <p class="text-white md:text-gray-800 text-lg font-bold">
+            Facamos em oferecer <br />
+            profissionalismo e conpetencia!
+          </p>
+          <p class="text-xs text-white mt-2">
+            A <span class="font-bold">ISK Contabilidade</span> oferece ao
+            cliente unm atendimeto diferencuado e <br />
+            espcidico par acadd segmento de nefocio, sempre estuturado sobre os
+            <br />
+            pilares que ustentam a ISK confianca, credidilidade e etica
+          </p>
+          <button
+            class="rounded bg-gray-800 text-white font-bold py-1.5 px-2.5 mt-3 uppercase text-[9px] lg:text-xs"
+          >
+            siaba mais
+          </button>
+          <!-- 3 column grid -->
+          <div class="grid grid-cols-3 mt-6 gap-4 mt-20 py-4">
+            <!-- column 1 -->
+            <div
+              class="text-center bg-gray-800 px-4 pt-9 pb-5 relative rounded"
+            >
+              <div
+                class="absolute -top-3 left-10 bg-white rounded-full h-10 w-10"
+              ></div>
+              <div
+                class="absolute bg-gray-800 rounded-full h-9.5 w-9.5 -top-3 left-10"
+              >
+                <img
+                  class="invert absolute h-8 w-8 top-1 left-0.5"
+                  src="handshake.png"
+                  alt="handshake icon"
+                />
+              </div>
+              <p
+                class="text-white font-bold text-[10px] lg:text-xs uppercase mt-2"
+              >
+                confianca
+              </p>
+              <p class="text-white text-[8px] lg:text-xs mt-3">
+                Nosso compromisso e com a sua empresa, prezamos por um
+                atendimento personalizado e de qualidade.
+              </p>
+            </div>
+            <!-- column 2 -->
+            <div
+              class="text-center bg-gray-800 px-4 pt-9 pb-5 relative rounded"
+            >
+              <div
+                class="absolute -top-3 left-10 bg-white rounded-full h-10 w-10"
+              ></div>
+              <div
+                class="absolute bg-gray-800 rounded-full h-9.5 w-9.5 -top-3 left-10"
+              >
+                <img
+                  class="invert absolute h-8 w-8 top-1 left-1"
+                  src="flower.png"
+                  alt="handshake icon"
+                />
+              </div>
+              <p
+                class="text-white font-bold text-[10px] lg:text-xs uppercase mt-2"
+              >
+                credibilidade
+              </p>
+              <p class="text-white text-[8px] lg:text-xs mt-3">
+                Nosso compromisso e com a sua empresa, prezamos por um
+                atendimento personalizado e de qualidade.
+              </p>
+            </div>
+            <!-- column 3 -->
+            <div
+              class="text-center bg-gray-800 px-4 pt-9 pb-5 relative rounded"
+            >
+              <div
+                class="absolute -top-3 left-10 bg-white rounded-full h-10 w-10"
+              ></div>
+              <div
+                class="absolute bg-gray-800 rounded-full h-9.5 w-9.5 -top-3 left-10"
+              >
+                <img
+                  class="absolute top-1.5 left-1.5 invert h-6 w-6"
+                  src="balance.png"
+                  alt="handshake icon"
+                />
+              </div>
+              <p
+                class="text-white font-bold text-[10px] lg:text-xs uppercase mt-2"
+              >
+                Etica
+              </p>
+              <p class="text-white text-[8px] lg:text-xs mt-3">
+                Nosso compromisso e com a sua empresa, prezamos por um
+                atendimento personalizado e de qualidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- the grid -->
+    <main class="mx-8 mb-15">
+      <p class="uppercase mt-20 text-center font-bold text-gray-800">
+        servicos
+      </p>
+      <p class="text-xs text-center">conheca nosso portfolio de servicos</p>
+      <div class="grid grid-cols-3 gap-4 mt-10">
+        <!-- item 1 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+        <!-- item 4 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+        <!-- item 5 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+        <!-- item 6 -->
+        <div class="flex">
+          <div
+            class="h-7 w-30 bg-[#c9b791] rounded p-1 sm:w-18 md:w-14 lg:w-12 grid place-items-center"
+          >
+            <img
+              class="object-fit h-5 w-8 md:w-6"
+              src="icon-2.png"
+              alt="img for the grid"
+            />
+          </div>
+          <div class="ml-1">
+            <p class="font-bold md:text-xs text-[10px]">
+              Assessoria Empresarial
+            </p>
+            <p class="md:text-xs text-[10px]">
+              visando apresentar de forma clara e prarica a aplicado de
+              condeitos financerios ajustados ao foco do....
+            </p>
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- the gray main -->
+    <main>
+      <div
+        class="flex bg-gray-800 text-white gap-10 lg:px-20 px-8 justify-center md:px-6 md:place-content-between lg:place-content-between lg:px-8 place-content-betweenp py-6"
+      >
+        <!-- the first item -->
+        <div>
+          <p
+            class="underline underline-offset-12 decoration-1 lg:text-xs text-[10px]"
+          >
+            sue name*
+            <span class="transparent" style="color: transparent"
+              >this text here is color-transparent
+            </span>
+          </p>
+          <div class="flex lg:gap-12 gap-4 lg:w-90 w-50">
+            <p
+              class="underline underline-offset-12 decoration-1 md:text-xs text-[10px] pt-4"
+            >
+              sue email*
+              <span class="transparent-2" style="color: transparent"
+                >transp</span
+              >
+            </p>
+            <p
+              class="underline underline-offset-12 decoration-1 md:text-xs text-[10px] pt-4"
+            >
+              seu telefone
+              <span class="transparent-3" style="color: transparent"
+                >transparent</span
+              >
+            </p>
+          </div>
+          <p
+            class="underline underline-offset-50 decoration-1 md:text-xs text-[10px] pt-4"
+          >
+            Mensagem
+            <span class="transparent-4" style="color: transparent"
+              >the text here is transparent-for-re</span
+            >
+          </p>
+          <div class="bg-white rounded px-2 flex items-center mt-20 w-32 gap-0">
+            <input type="checkbox" class="border-gray-300" />
+            <p class="ml-2 text-black text-[8px] py-3 font-bold">
+              Nbo Sou Un rob
+            </p>
+            <img
+              class="w-5 h-4 ml-2"
+              src="not_a_robot_icon-removebg-preview.png"
+              alt="not a robot icon"
+            />
+          </div>
+          <div
+            class="rounded-full upper font-bold bg-white text-black mt-3 uppercase text-center text-[8px] py-1 w-17"
+          >
+            envar
+          </div>
+        </div>
+        <!-- second item -->
+        <div class="text-white text-[10px] md:pt-6 lg:pt-8">
+          <p class="font-bold text-[14px] md:text-xl">Fale Conosco</p>
+          <p class="mb-4 text-[10px] md:text-xs">
+            Nos envie uma mensagen preenchendo o formulario, entramos em contato
+            o mais rapido possive!
+          </p>
+          <p class="md:text-xs">
+            se preferie, tire suas ducidas atraves do telephone:
+          </p>
+          <p class="font-bold text-[14px] md:text-xl">(47) 3084-5500</p>
+        </div>
+      </div>
+    </main>
+    <!-- the footer -->
+    <footer>
+      <div
+        class="flex items-center bg-[#c9b791] py-1 gap-4 px-8 lg:gap-40 lg:px-30"
+      >
+        <img
+          class="h-20 w-20 lg:h-24 lg:w-30"
+          src="ChatGPT Image Nov 21, 2025, 01_00_20 AM.png"
+          alt=""
+        />
+        <div class="">
+          <p class="text-[10px]">
+            <span class="font-bold">CRC:</span> sc-009492/0-0
+          </p>
+          <p class="text-[10px]">
+            Escridirio contabil em jaregua do Sul-Santa Catraina, baseado em
+            confiance,credidilidade, etica e qualidade em seus servicos. Confira
+            noss endereco em
+          </p>
+          <p class="text-[10px]">
+            <span class="font-bold">ISK Contabilidade</span> &copy;2019 - Todos
+            os direitos reservados
+            <span class="text-sky-800 font-bold"
+              >| Cubbe Marketing & Inovalize</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="bg-black h-15 w-full"></div>
+    </footer>
+  </body>
+</html>
